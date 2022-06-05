@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path # include: 他のURLconfへの参照を可能にする
 
 urlpatterns = [
+    path('fish_dictionaries/', include('fish_dictionaries.urls')),
     path('admin/', admin.site.urls),
 ]
