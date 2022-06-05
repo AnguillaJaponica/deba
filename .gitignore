@@ -107,4 +107,8 @@ venv.bak/
 dmypy.json
 # Pyre type checker
 .pyre/
+
+# do not push secret key
+local_settings.py
+deba/get_random_secret_key.py
 # End of https://www.gitignore.io/api/django
